@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// تم تطوير هذا التطبيق بواسطة Noor Edeen Irjan
+
 void main() {
   runApp(const MyApp());
 }
@@ -30,9 +32,23 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Welcome to PoliceSmart'),
       ),
       body: const Center(
-        child: Text(
-          'Hello, Police Officer!',
-          style: TextStyle(fontSize: 24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Hello, Police Officer!',
+              style: TextStyle(fontSize: 24),
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Developed by Noor Edeen Irjan',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.grey,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ],
         ),
       ),
     );
