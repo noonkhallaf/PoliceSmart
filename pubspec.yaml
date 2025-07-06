@@ -1,24 +1,15 @@
-name: policesmart
-description: A new Flutter project.
-
-publish_to: 'none'
-
+name: police_smart
+description: A smart police assistance app using Flutter.
+publish_to: 'none' 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-
-  cupertino_icons: ^1.0.2
-  firebase_core: ^2.10.0
-  firebase_auth: ^4.4.0
-  firebase_messaging: ^14.7.4
-  flutter_local_notifications: ^16.3.2
-  device_info_plus: ^9.0.3
-  shared_preferences: ^2.2.0
+  cupertino_icons: ^1.0.6
 
 dev_dependencies:
   flutter_test:
