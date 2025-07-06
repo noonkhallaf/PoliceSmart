@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-// تم تطوير هذا التطبيق بواسطة Noor Edeen Irjan
+import 'login_screen.dart';  // استدعاء صفحة تسجيل الدخول
 
 void main() {
   runApp(const MyApp());
@@ -17,11 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const LoginScreen(),  // يبدأ من شاشة تسجيل الدخول
     );
   }
 }
 
+// الصفحة الرئيسية بعد تسجيل الدخول
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -42,11 +42,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 20),
             Text(
               'Developed by Noor Edeen Irjan',
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.grey,
-                fontStyle: FontStyle.italic,
-              ),
+              style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
             ),
           ],
         ),
